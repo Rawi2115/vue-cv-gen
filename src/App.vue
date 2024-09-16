@@ -18,10 +18,6 @@ const handlePreviousStep = () => {
 const handleDataUpdate = (formData) => {
   data.value = { ...data.value, ...formData };
 };
-watch(
-  () => data.value,
-  () => console.log(data.value)
-);
 </script>
 <template>
   <h1 class="text-center text-2xl pt-2">Cv Generator</h1>

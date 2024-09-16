@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  #app {
+    @apply min-h-screen;
+  }
+  .formContainer {
+    @apply flex justify-center items-center;
+  }
+  .formClass {
+    @apply flex flex-col gap-4;
+  }
+  .inputContainer {
+    @apply flex flex-col gap-1 items-start;
+  }
+  .buttonContainer {
+    @apply flex gap-2 justify-between;
+  }
+  .innerContainer {
+    @apply flex justify-center items-center flex-col gap-4 md:flex-row md:flex-wrap md:max-w-xl;
+  }
+}
